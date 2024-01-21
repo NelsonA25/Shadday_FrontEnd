@@ -1,4 +1,17 @@
 .nav-item{
     font-family:Verdana, Geneva, Tahoma, sans-serif;
-    
 }
+nav{
+    height: 100%;
+}
+.dropdown-menu{
+    background-color: blue;
+}
+
+.container-fluid{
+    height: 90%;
+}
+
+.sidebar {
+    height: 100vh;
+  }

@@ -5,23 +5,49 @@
         <div class="sidebar-sticky">
           <ul class="nav flex-column">
             <li class="nav-item">
-              <a class="nav-link active">
-                Inicio
+              <a class="nav-link active text-white">
+                SHADDAY
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" routerLink="/productos" >
-                Productos
-              </a>
+              <div class="dropdown">
+                <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Productos
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="nav-link text-white dropdown-item" routerLink="/productos_crear">Crear Producto</a></li>
+                  <li><a class="nav-link text-white dropdown-item" routerLink="/productos_listar">Listar Productos</a></li>
+                </ul>
+              </div>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" routerLink="/clientes">
-                Clientes
-              </a>
+              
+
+              <div class="dropdown">
+                <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Clientes
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="nav-link text-white dropdown-item" routerLink="/clientes_crear">Crear Cliente</a></li>
+                  <li><a class="nav-link text-white dropdown-item" routerLink="/clientes_listar">Listar Clientes</a></li>
+                </ul>
+              </div>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" routerLink="/invoices">
-                Invoices
+              
+              <div class="dropdown">
+                <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Facturas
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="nav-link text-white dropdown-item" routerLink="/invoices">Crear Factura</a></li>
+                  <li><a class="nav-link text-white dropdown-item" routerLink="/invoices">Listar Facturas</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" routerLink="">
+                Consultas
               </a>
             </li>
           </ul>
@@ -29,7 +55,7 @@
       </nav>
   
       <!-- Contenido Principal -->
-      <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
+      <main role="main" class="col-md-9 col-lg-10 px-md-4" style="height: 100vh;">
         <router-outlet></router-outlet>
         
       </main>
